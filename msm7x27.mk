@@ -144,7 +144,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-flags=m=y \
     ro.config.sync=yes \
     persist.sys.usb.config=mass_storage,adb \
-    dalvik.vm.dexopt-data-only=1
+    dalvik.vm.dexopt-data-only=1 \
+    persist.sys.scrollingcache=3
 
 # We have enough storage space to hold precise GC data
 #PRODUCT_TAGS += dalvik.gc.type-precise
