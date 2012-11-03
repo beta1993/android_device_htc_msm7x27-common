@@ -101,7 +101,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.fd.plmn.prefix=23402,23410,23411 \
     ro.ril.def.agps.mode=2 \
     ro.ril.hsxpa=2 \
-    ro.ril.gprsclass=12
+    ro.ril.gprsclass=12 \
+    ro.telephony.ril.v3=signalstrength,skipbrokendatacall
 
 # Interfaces
 PRODUCT_PROPERTY_OVERRIDES += \
