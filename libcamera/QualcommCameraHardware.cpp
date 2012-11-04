@@ -891,19 +891,11 @@ static void cam_frame_post_video (struct msm_frame *p)
     return;
 }
 
-void QualcommCameraHardware::storeTargetType(void) {
-    char mDeviceName[PROPERTY_VALUE_MAX];
-    property_get("ro.product.device",mDeviceName," ");
-    mCurrentTarget = TARGET_MAX;
-    for( int i = 0; i < TARGET_MAX ; i++) {
-        if( !strncmp(mDeviceName, targetList[i].targetStr, 7)) {
-            mCurrentTarget = targetList[i].targetEnum;
-            break;
-        }
-    }
-    mCurrentTarget = TARGET_MSM7227;
-    ALOGV(" Storing the current target type as %d ", mCurrentTarget );
-    return;
+void QualcommCameraHardware::storeTargetType(void)
+{
+      mCurrentTarget = TARGET_MSM7227;
+      LOGV(" Storing the current target type as %d ", mCurrentTarget );
+      return;
 }
 
 //-------------------------------------------------------------------------------------
@@ -1295,10 +1287,14 @@ void QualcommCameraHardware::findSensorType(){
 
 bool QualcommCameraHardware::startCamera()
 {
+    mCurrentTarget = TARGET_MSM7227;
     ALOGV("startCamera E");
-    if( mCurrentTarget == TARGET_MAX ) {
-        ALOGV(" Unable to determine the target type. Camera will not work ");
+    if( mCurrentTarget !== TARGET_MSM7227 ) {
+        ALOGV("Only MSM7227 is supported");
         return false;
+    }
+    else {
+    ALOGV("MSM7227 CameraHal started");
     }
 #if DLOPEN_LIBMMCAMERA
     libmmcamera = ::dlopen("liboemcamera.so", RTLD_NOW);
