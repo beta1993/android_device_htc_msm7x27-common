@@ -44,7 +44,7 @@
 #include <linux/android_pmem.h>
 #endif
 #include <linux/ioctl.h>
-#include "CameraParameters.h"
+#include <camera/CameraParameters.h>
 
 #include "linux/msm_mdp.h"
 #include <linux/fb.h>
