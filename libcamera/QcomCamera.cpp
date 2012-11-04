@@ -372,8 +372,6 @@ void CameraHAL_FixupParams(CameraParameters &settings)
    const char *preview_frame_rates  = "30,27,24,15";
    const char *preferred_frame_rate = "15";
    const char *frame_rate_range     = "(15,30)";
-   const char *continuous-af          = "caf-off";
-   const char CameraParameters::KEY_CAF[] = "continuous-af";
 
    settings.set(CameraParameters::KEY_VIDEO_FRAME_FORMAT,
                 CameraParameters::PIXEL_FORMAT_YUV420SP);
@@ -410,10 +408,6 @@ void CameraHAL_FixupParams(CameraParameters &settings)
    if (!settings.get(CameraParameters::KEY_SUPPORTED_PREVIEW_FPS_RANGE)) {
       settings.set(CameraParameters::KEY_SUPPORTED_PREVIEW_FPS_RANGE,
                    frame_rate_range);
-   }
-   if (!settings.get(CameraParameters::KEY_CAF)) {
-      settings.set(CameraParameters::KEY_CAF,
-                   continuous-af);
    }
 }
 
