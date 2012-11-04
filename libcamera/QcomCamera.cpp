@@ -409,6 +409,10 @@ void CameraHAL_FixupParams(CameraParameters &settings)
       settings.set(CameraParameters::KEY_SUPPORTED_PREVIEW_FPS_RANGE,
                    frame_rate_range);
    }
+   if (!settings.get(CameraParameters::KEY_CAF)) {
+      settings.set(CameraParameters::KEY_CAF,
+                   continuous-af);
+   }
 }
 
 static void camera_release_memory(struct camera_memory *mem) { }
