@@ -22,7 +22,7 @@
 #include <utils/RefBase.h>
 #include <gui/ISurface.h>
 #include <camera/Camera.h>
-#include <camera/CameraParameters.h>
+#include "CameraParameters.h"
 
 namespace android {
 
