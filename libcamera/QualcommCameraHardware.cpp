@@ -1289,12 +1289,12 @@ bool QualcommCameraHardware::startCamera()
 {
     mCurrentTarget = TARGET_MSM7227;
     ALOGV("startCamera E");
-    if( mCurrentTarget !== TARGET_MSM7227 ) {
-        ALOGV("Only MSM7227 is supported");
+    if(mCurrentTarget == TARGET_MSM7227 ) {
+        ALOGV("MSM7227 CameraHal started");
         return false;
     }
     else {
-    ALOGV("MSM7227 CameraHal started");
+      ALOGV("Only MSM7227 is supported");
     }
 #if DLOPEN_LIBMMCAMERA
     libmmcamera = ::dlopen("liboemcamera.so", RTLD_NOW);
