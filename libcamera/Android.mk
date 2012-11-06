@@ -13,6 +13,7 @@ DLOPEN_LIBMMCAMERA:=1
 include $(CLEAR_VARS)
 
 LOCAL_PRELINK_MODULE := false
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES:= QualcommCameraHardware.cpp
 
