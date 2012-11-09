@@ -1,11 +1,5 @@
 <CodecList>
   <Encoders>
-    <!-- TODO: Pretty sure we don't have a hardware avc encoder -->
-    <MediaCodec name="OMX.qcom.video.encoder.avc" type="video/avc" >
-      <Quirk name="requires-allocate-on-input-ports" />
-      <Quirk name="requires-allocate-on-output-ports"/>
-      <Quirk name="requires-loaded-to-idle-after-allocation"/>
-    </MediaCodec>
     <MediaCodec name="OMX.qcom.video.encoder.h263" type="video/3gpp" >
       <Quirk name="requires-allocate-on-input-ports" />
       <Quirk name="requires-allocate-on-output-ports"/>
@@ -23,11 +17,6 @@
     <MediaCodec name="OMX.google.aac.decoder" type="audio/mp4a-latm" />
     <MediaCodec name="OMX.google.g711.alaw.decoder" type="audio/g711-alaw" />
     <MediaCodec name="OMX.google.g711.mlaw.decoder" type="audio/g711-mlaw" />
-    <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
-      <Quirk name="requires-allocate-on-input-ports" />
-      <Quirk name="requires-allocate-on-output-ports"/>
-      <Quirk name="defers-output-buffer-allocation"/>
-    </MediaCodec>
     <MediaCodec name="OMX.qcom.video.decoder.mpeg2" type="video/mpeg2" >
       <Quirk name="requires-allocate-on-input-ports" />
       <Quirk name="requires-allocate-on-output-ports"/>
