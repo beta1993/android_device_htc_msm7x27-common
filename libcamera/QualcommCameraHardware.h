@@ -22,7 +22,7 @@
 #include <binder/MemoryBase.h>
 #include <binder/MemoryHeapBase.h>
 #include <stdint.h>
-#include <ui/Overlay.h>
+#include "Overlay.h"
 
 extern "C" {
 #include <linux/android_pmem.h>
