@@ -31,7 +31,7 @@ LOCAL_SHARED_LIBRARIES+= liboemcamera
 else
 LOCAL_SHARED_LIBRARIES+= libdl
 endif
-
+LOCAL_MODULE_TAGS      := optional
 LOCAL_MODULE:= libcamera
 include $(BUILD_SHARED_LIBRARY)
 
