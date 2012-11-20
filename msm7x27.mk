@@ -101,8 +101,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.disable.fd.plmn.prefix=23402,23410,23411 \
     ro.ril.def.agps.mode=2 \
     ro.ril.hsxpa=2 \
-    ro.ril.gprsclass=12 \
-    ro.telephony.ril.v3=signalstrength,skipbrokendatacall
+    ro.ril.gprsclass=12
 
 # Interfaces
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -144,10 +143,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-flags=m=y \
     ro.config.sync=yes \
     persist.sys.usb.config=mass_storage,adb \
-    dalvik.vm.dexopt-data-only=1 \
-    persist.sys.scrollingcache=3 \
-    video.accelerate.hw=1 \
-    windowsmgr.max_events_per_sec=150
+    dalvik.vm.dexopt-data-only=1
 
 # We have enough storage space to hold precise GC data
 #PRODUCT_TAGS += dalvik.gc.type-precise
