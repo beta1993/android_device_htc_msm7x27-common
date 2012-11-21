@@ -112,10 +112,14 @@
          animation with the specified delay (in milliseconds), -1 will disable the
          animation
     -->
-    <!-- <integer name="config_screenOnAnimation">0</integer> -->
+    <integer name="config_screenOnAnimation">-1</integer>
+    
+    <!-- Disable screen-off electroc beam animation -->
+
+    <bool name="config_screenOffAnimation">false</integer>
 
     <!-- Enable electron beam animation -->
-    <bool name="config_animateScreenLights">false</bool>
+    <bool name="config_animateScreenLights">true</bool>
 
     <!-- Flag indicating whether the surface flinger is inefficient
          at performing a blur.  Used by parts of the UI to turn off
