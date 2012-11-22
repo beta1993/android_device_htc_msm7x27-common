@@ -105,7 +105,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Interfaces
 PRODUCT_PROPERTY_OVERRIDES += \
-    mobiledata.interfaces=rmnet0,rmnet1,rmnet2,gprs,ppp0 \
+    net.dns1=8.8.8.8 \
+    net.dns2=8.8.4.4 \
+    net.ppp0.dns1=8.8.8.8 \
+    net.ppp0.dns2=8.8.4.4 \
+    mobiledata.interfaces=ppp0,gannet0,rmnet0,rmnet1,rmnet2 \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
 
