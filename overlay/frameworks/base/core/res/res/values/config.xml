@@ -116,7 +116,7 @@
     
     <!-- Disable screen-off electroc beam animation -->
 
-    <bool name="config_screenOffAnimation">false</integer>
+    <bool name="config_screenOffAnimation">false</bool>
 
     <!-- Enable electron beam animation -->
     <bool name="config_animateScreenLights">true</bool>
