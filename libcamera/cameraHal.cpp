@@ -395,7 +395,7 @@ CameraHAL_FixupParams(android::CameraParameters &settings)
       "640x480,352x288,320x240,176x144";
    const char *preferred_size       = "480x320";
    const char *preview_frame_rates  = "10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25";
-   const char *preferred_frame_rate = "25";
+   const char *preferred_frame_rate = "15";
    const char *frame_rate_range     = "(10,25)";
    const char *preferred_horizontal_viewing_angle = "51.2";
    const char *preferred_vertical_viewing_angle = "39.4";
