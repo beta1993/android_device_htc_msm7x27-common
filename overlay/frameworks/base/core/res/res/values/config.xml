@@ -46,11 +46,11 @@
     <!-- Default LED off time for notification LED in milliseconds. -->
     <integer name="config_defaultNotificationLedOff">9000</integer>
 
-    <!-- Package name providing network location support. -->
-    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string>
+    <!-- Package name providing network location support. 
+    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string>-->
 
-    <!-- Package name providing geocoder API support. -->
-    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string>
+    <!-- Package name providing geocoder API support.
+    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string>-->
 
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
@@ -105,8 +105,8 @@
     </integer-array>
 
     <!-- Boolean indicating whether the start command should be called on the wireless interface
-         when starting the SoftAp -->
-    <bool name="config_wifiApStartInterface">true</bool>
+         when starting the SoftAp
+    <bool name="config_wifiApStartInterface">true</bool>-->
 
     <!-- Values greater or equal to 0 will enable electronbeam screen-on
          animation with the specified delay (in milliseconds), -1 will disable the
@@ -128,6 +128,6 @@
     <bool name="config_sf_slowBlur">true</bool>
 
     <!-- Boolean indicating if current platform supports quick switch-on/off of
-         Bluetooth Module -->
-    <bool name="config_bluetooth_adapter_quick_switch">false</bool>
+         Bluetooth Module
+    <bool name="config_bluetooth_adapter_quick_switch">false</bool>-->
 </resources>
