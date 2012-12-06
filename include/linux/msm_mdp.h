@@ -155,6 +155,7 @@ struct msmfb_data {
 struct msmfb_overlay_data {
  uint32_t id;
  struct msmfb_data data;
+ struct msmfb_data dst_data;
 };
 
 struct msmfb_img {
