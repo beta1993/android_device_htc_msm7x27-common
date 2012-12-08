@@ -72,6 +72,8 @@ TARGET_NO_HW_VSYNC := true
 TARGET_NO_HW_OVERLAY := true
 # Disable HDMI support, we can't use it
 BOARD_HAS_NO_HDMI := true
+# Disable ION support, cause our Adreno200 doesn't support it, remove this when(and if) we get new GPU controllers from qcom
+TARGET_HAS_NO_ION := true
 # Some pixel formats aren't supported. Commit used with this flag: http://goo.gl/91KJ9
 COMMON_GLOBAL_CFLAGS += -DQCOM_MISSING_PIXEL_FORMATS
 
