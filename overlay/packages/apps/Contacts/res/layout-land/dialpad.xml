@@ -27,56 +27,68 @@
     <TableRow
          android:layout_height="0px"
          android:layout_weight="1">
-        <ImageButton android:id="@+id/one" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_1"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/one" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_1_wht"
             android:contentDescription="@string/description_image_button_one" />
-        <ImageButton android:id="@+id/two" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_2"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/two" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_2_wht"
             android:contentDescription="@string/description_image_button_two" />
-        <ImageButton android:id="@+id/three" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_3"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/three" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_3_wht"
             android:contentDescription="@string/description_image_button_three" />
     </TableRow>
 
     <TableRow
          android:layout_height="0px"
          android:layout_weight="1">
-        <ImageButton android:id="@+id/four" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_4"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/four" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_4_wht"
             android:contentDescription="@string/description_image_button_four" />
-        <ImageButton android:id="@+id/five" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_5"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/five" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_5_wht"
             android:contentDescription="@string/description_image_button_five" />
-        <ImageButton android:id="@+id/six" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_6"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/six" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_6_wht"
             android:contentDescription="@string/description_image_button_six" />
     </TableRow>
 
     <TableRow
          android:layout_height="0px"
          android:layout_weight="1">
-        <ImageButton android:id="@+id/seven" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_7"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/seven" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_7_wht"
             android:contentDescription="@string/description_image_button_seven" />
-        <ImageButton android:id="@+id/eight" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_8"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/eight" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_8_wht"
             android:contentDescription="@string/description_image_button_eight" />
-        <ImageButton android:id="@+id/nine" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_9"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/nine" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_9_wht"
             android:contentDescription="@string/description_image_button_nine" />
     </TableRow>
 
     <TableRow
          android:layout_height="0px"
          android:layout_weight="1">
-        <ImageButton android:id="@+id/star" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_star"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/star" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_star_wht"
             android:contentDescription="@string/description_image_button_star" />
-        <ImageButton android:id="@+id/zero" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_0"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/zero" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_0_wht"
             android:contentDescription="@string/description_image_button_zero" />
-        <ImageButton android:id="@+id/pound" style="@style/DialtactsDialpadButtonStyle"
-            android:src="@drawable/dial_num_pound"
+        <com.android.contacts.dialpad.DialpadImageButton
+            android:id="@+id/pound" style="@style/DialtactsDialpadButtonStyle"
+            android:src="@drawable/dial_num_pound_wht"
             android:contentDescription="@string/description_image_button_pound" />
     </TableRow>
 </TableLayout>
